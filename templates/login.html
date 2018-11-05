@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<style>
+			body{
+				font-family: 'Roboto', sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="/" class="brand-logo"><i class="material-icons">cloud</i>Othello</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger">
+					<i class="material-icons">menu</i>
+				</a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/">Home</a></li>
+					<li><a href="/login">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul class="sidenav" id="mobile-demo">
+			<li><a href="/">Home</a></li>
+			<li><a href="/login">Login</a></li>
+		</ul>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6" style="float: none; margin: 0 auto;"> 
+					<div class="card darken-1">
+						<div class="card-content">
+							<span class="card-title">Login</span>
+							<div class="row">
+								<div class="input-field col s6">
+									<input id="user_name" type="text" class="validate ">
+									<label for="user_name">USERNAME</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s6">
+									<input id="password" type="password" class="validate">
+									<label for="password">PASSWORD</label>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="card-action">
+							<a href="/login">Login</a>
+							<a href="/signup">Signup</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			  document.addEventListener('DOMContentLoaded', function() {
+				  var elems = document.querySelectorAll('.sidenav');
+				  var instances = M.Sidenav.init(elems, options);
+			  });
+		</script>
+	</body>
+</html>
